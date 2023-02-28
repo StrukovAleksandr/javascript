@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Learn DOM</title>
+</head>
+
+<body>
+	<h1 id="main-heading">my Friends!</h1>
+	
+	
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	
+	<script>
+		var f =["Gey", "Key", "Zet"];
+		for (var i=0;i<3; i++) {
+		var frien = f[i];
+		$("body").append("<p>" + frien +"</p>");
+		}
+	</script>
+	<script>
+	$("p").hide(0).slideDown(1000);
+	$("p").append(" the best").slideDown(2000);
+	function timeUp () {
+	alert("Time is up!");
+	};
+	setTimeout(timeUp,4000);
+	var counter = 1;
+	var Message = function () {
+	        console.log("You are seeing this text for "+counter+" sek");
+	        counter++;
+	};
+	var timeinterval = setInterval(Message,5000);
+	
+	</script>
+</body>
+</html>
