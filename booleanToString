@@ -1,0 +1,4 @@
+function booleanToString(b){
+  var f = String(b);
+  return f;
+}
