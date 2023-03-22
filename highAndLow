@@ -1,0 +1,11 @@
+function highAndLow(numbers){
+  var numberes = [];
+    var f= numbers.split(' ');
+  for (var i=0; i<f.length; i++) {
+     numberes.push(Number(f[i]));
+  }
+  let res = Math.min(...numberes);
+   let res1 =Math.max(...numberes);
+return (res1+" "+res);
+
+}
