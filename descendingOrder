@@ -1,0 +1,11 @@
+function descendingOrder(n){
+ let r =[];
+  let f = n.toString();
+for (var i = 0; i < f.length; i++) {
+  r.push(f[i]);
+}
+ r.sort();
+  r.reverse();
+  let result = r.join('');
+  return Number(result); 
+}
