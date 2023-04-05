@@ -1,0 +1,5 @@
+function betweenExtremes(numbers) {
+    let minimumN=Math.min(...numbers);
+    let maximumN = Math.max(...numbers);
+    return maximumN-minimumN;
+}
